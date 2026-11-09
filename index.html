@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boutique das Flores | Flores e Presentes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <a href="#inicio" class="marca">
+            <img src="boutique_das_flores_logo_dourada.png"
+                 alt="Boutique das Flores">
+        </a>
+
+        <button class="menu-mobile" id="menuMobile"
+                aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navegacao" id="navegacao">
+            <a href="#inicio">Início</a>
+            <a href="#apresentacao">A Boutique</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <!-- APRESENTAÇÃO COM VÍDEO -->
+    <section class="apresentacao" id="apresentacao">
+
+        <video
+    class="video-fundo"
+    autoplay
+    muted
+    loop
+    playsinline
+    webkit-playsinline
+    preload="auto"
+>
+    <source src="video-flores-original.mp4" type="video/mp4">
+</video>
+
+        <div class="video-sombra"></div>
+
+        <div class="apresentacao-conteudo">
+            <span class="subtitulo">BOUTIQUE DAS FLORES</span>
+
+            <h1>A beleza está<br>nos pequenos detalhes.</h1>
+
+            <p>
+                Buquês, cestas e presentes preparados
+                para tornar cada ocasião especial.
+            </p>
+
+            <a href="#catalogo" class="botao-claro">
+                EXPLORAR CATÁLOGO
+            </a>
+        </div>
+
+        <div class="video-rodape">
+            <span>FEITO COM CARINHO</span>
+            <span>FLORES PARA TODOS OS MOMENTOS</span>
+        </div>
+
+    </section>
+
+
+    <!-- INTRODUÇÃO DO CATÁLOGO -->
+    <main>
+
+        <section class="catalogo" id="catalogo">
+
+            <div class="catalogo-introducao">
+                <span class="subtitulo-rosa">NOSSO CATÁLOGO</span>
+
+                <h2>Encontre o presente<br>que diz tudo.</h2>
+
+                <p>
+                    Cada flor carrega uma mensagem.
+                    Escolha a sua e surpreenda alguém especial.
+                </p>
+            </div>
+
+
+            <!-- CATEGORIAS -->
+            <div class="categorias-area">
+
+                <div class="categorias-titulo">
+                    <span>EXPLORE POR CATEGORIA</span>
+                    <span class="linha-categorias"></span>
+                </div>
+
+                <nav class="categorias" id="categorias">
+
+                    <button class="categoria ativa" data-categoria="novidades">
+                        <span>01</span>
+                        <strong>Novidades</strong>
+                        <small>09 produtos</small>
+                    </button>
+
+                    <button class="categoria" data-categoria="buques">
+                        <span>02</span>
+                        <strong>Buquês para todas as ocasiões</strong>
+                        <small>52 produtos</small>
+                    </button>
+
+                    <button class="categoria" data-categoria="cafe">
+                        <span>03</span>
+                        <strong>Cestas de café da manhã</strong>
+                        <small>06 produtos</small>
+                    </button>
+
+                    <button class="categoria" data-categoria="flores">
+                        <span>04</span>
+                        <strong>Cestas com flores</strong>
+                        <small>13 produtos</small>
+                    </button>
+
+                    <button class="categoria" data-categoria="cestas">
+                        <span>05</span>
+                        <strong>Cestas</strong>
+                        <small>29 produtos</small>
+                    </button>
+
+                    <button class="categoria" data-categoria="chocolates">
+                        <span>06</span>
+                        <strong>Chocolates</strong>
+                        <small>15 produtos</small>
+                    </button>
+
+                </nav>
+
+            </div>
+
+
+            <!-- PRODUTOS -->
+            <section class="produtos-area">
+
+                <div class="produtos-cabecalho">
+                    <div>
+                        <span class="subtitulo-rosa" id="categoriaNumero">
+                            CATEGORIA 01
+                        </span>
+
+                        <h3 id="categoriaNome">Novidades</h3>
+                    </div>
+
+                    <span class="quantidade" id="quantidadeProdutos">
+                        09 produtos
+                    </span>
+                </div>
+
+                <div class="produtos-lista" id="listaProdutos">
+                    <!-- Produtos inseridos pelo JavaScript -->
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- CONTATO -->
+    <section class="contato" id="contato">
+
+        <div class="contato-conteudo">
+            <span class="subtitulo">UM PRESENTE ESPECIAL COMEÇA AQUI</span>
+
+            <h2>Vamos escolher<br>algo inesquecível?</h2>
+
+            <p>
+                Entre em contato com a Boutique das Flores
+                e faça sua encomenda.
+            </p>
+
+            <a href="#" class="botao-whatsapp" id="whatsappGeral"
+               target="_blank" rel="noopener noreferrer">
+                FALE PELO WHATSAPP
+                <span>↗</span>
+            </a>
+        </div>
+
+        <div class="contato-decoracao" aria-hidden="true">❀</div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <img src="boutique_das_flores_logo_dourada.png"
+             alt="Boutique das Flores">
+
+        <p>Flores que encantam, momentos que ficam.</p>
+
+        <span>© 2026 Boutique das Flores. Todos os direitos reservados.</span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
